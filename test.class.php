@@ -30,4 +30,9 @@ class Testing
 		$this->name = $name;
 		$this->value = $value;
 	}
+
+        protected function toString()
+        {
+                return $this->name . ": " . $this->value;
+        }
 }
